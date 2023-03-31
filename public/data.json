@@ -1,0 +1,38 @@
+[
+ {
+  "id": "01",
+  "name": "Mohammed Rahman",
+  "title": "What are the benefits of using React Native for mobile app development?",
+  "profile_pic": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "cover_pic": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "release": "2021-06-15",
+  "read": 8
+ },
+ {
+  "id": "02",
+  "name": "Nasreen Ahmed",
+  "title": "How can you improve website performance with lazy loading in JavaScript?",
+  "profile_pic": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+  "cover_pic": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "release": "2022-02-01",
+  "read": 6
+ },
+ {
+  "id": "03",
+  "name": "Abdul Kader",
+  "title": "What are some best practices for unit testing in Python?",
+  "profile_pic": "https://images.pexels.com/photos/3141289/pexels-photo-3141289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "cover_pic": "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "release": "2020-10-22",
+  "read": 10
+ },
+ {
+  "id": "04",
+  "name": "Shahana Islam",
+  "title": "How can you use CSS grid to create responsive layouts?",
+  "profile_pic": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "cover_pic": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "release": "2021-12-05",
+  "read": 7
+ }
+]
