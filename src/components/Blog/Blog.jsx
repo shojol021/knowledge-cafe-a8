@@ -18,17 +18,6 @@ const Blog = (props) => {
         }
     };
 
-    // const [count, setCount] = useState(0)
-    // const handleToast = () => {
-    //     const newCount = count + 1;
-    //     setCount(newCount)
-    //     console.log(count)
-    //     if(count > 0){
-    //         toast('Already Bookmarked')
-    //         return;
-    //     }
-        
-    // }
     return (
         <div className="card card-compact bg-base-100 shadow-xl mx-6">
             <figure><img src={cover_pic} alt="" /></figure>
