@@ -6,12 +6,14 @@ import Sidebar from './components/Sidebar/Sidebar';
 const App = () => {
 
   const [count, setCount] = useState(0)
-  const [title, setTitle] = useState("")
+  const [titles, setTitles] = useState([])
+  const [readTime, setReadTime] = useState(0)
 
   const setBookmark = (title) => {
     const newCount = count + 1;
     setCount(newCount);
-    setTitle(title)
+    setTitles([...titles, title]);
+    console.log(titles);
   }
 
   return (
@@ -20,10 +22,17 @@ const App = () => {
       <hr className='py-2 mx-6' />
       <div className='flex'>
         <Blogs setBookmark={setBookmark}></Blogs>
-        <Sidebar count={count} title={title}></Sidebar>
+        <Sidebar count={count} titles={titles}></Sidebar>
       </div>
     </div>
   );
 };
 
 export default App;
+
+ // const setBookmark = (title) => {
+  //   const newCount = count + 1;
+  //   setCount(newCount);
+  //   const titleElement = <p className='w-5/6 bg-white rounded-lg mx-auto my-3 px-3 py-2'>{title}</p>
+  //   setTitle(titleElement);
+  // }
