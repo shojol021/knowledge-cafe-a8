@@ -27,7 +27,7 @@ const App = () => {
     <div className=''>
       <Nav></Nav>
       <hr className='py-2 mx-6' />
-      <div className='flex'>
+      <div className='flex flex-col lg:flex-row'>
         <Blogs setBookmark={setBookmark} addReadTime={addReadTime}></Blogs>
         <Sidebar count={count} titles={titles} readTime={readTime}></Sidebar>
       </div>
