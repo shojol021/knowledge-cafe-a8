@@ -4,6 +4,7 @@ import Blogs from './components/Blogs/Blogs';
 import Sidebar from './components/Sidebar/Sidebar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Questions from './components/Questions/Questions';
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
         <Blogs setBookmark={setBookmark} addReadTime={addReadTime}></Blogs>
         <Sidebar count={count} titles={titles} readTime={readTime}></Sidebar>
       </div>
+      <Questions></Questions>
       <ToastContainer></ToastContainer>
     </div>
   );

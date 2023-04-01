@@ -6,7 +6,7 @@ const Sidebar = ({ count, titles, readTime }) => {
             <div className='bg-gray-100 py-2 rounded-lg sticky top-0'>
                 <h3 className='font-bold text-lg pt-4 ps-6'>Bookmarked Blogs : {count}</h3>
                 {
-                    titles.map((title, index) => <p key={index} className='w-5/6 bg-white rounded-lg mx-auto my-3 px-3 py-2'>{title}</p>)
+                   titles.map((title, index) => <p key={index} className='w-5/6 bg-white rounded-lg mx-auto my-3 px-3 py-2'>{title}</p>)
                 }
             </div>
         </div>
