@@ -4,7 +4,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Blog = (props) => {
     const { name, title, profile_pic, cover_pic, read, release, days_ago, tag1, tag2 } = props.blog;
-    const { setBookmark } = props;
+    const { setBookmark, addReadTime } = props;
     return (
         <div className="card card-compact bg-base-100 shadow-xl mx-6">
             <figure><img src={cover_pic} alt="" /></figure>
@@ -21,10 +21,7 @@ const Blog = (props) => {
                 </div>
                 <h2 className="card-title text-4xl">{title}</h2>
                 <p className='text-gray-400'>{tag1} {tag2}</p>
-                <p className='underline text-lg'>Mark as read</p>
-                {/* <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                </div> */}
+                <p onClick={() => addReadTime(read)} className='underline text-lg cursor-pointer'>Mark as read</p>
             </div>
         </div>
     );

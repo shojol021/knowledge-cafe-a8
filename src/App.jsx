@@ -16,13 +16,18 @@ const App = () => {
     console.log(titles);
   }
 
+  const addReadTime = (read) => {
+    const newReadTime = readTime + read;
+    setReadTime(newReadTime);
+  }
+
   return (
     <div className=''>
       <Nav></Nav>
       <hr className='py-2 mx-6' />
       <div className='flex'>
-        <Blogs setBookmark={setBookmark}></Blogs>
-        <Sidebar count={count} titles={titles}></Sidebar>
+        <Blogs setBookmark={setBookmark} addReadTime = {addReadTime}></Blogs>
+        <Sidebar count={count} titles={titles} readTime = {readTime}></Sidebar>
       </div>
     </div>
   );
