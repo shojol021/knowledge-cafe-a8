@@ -17,7 +17,7 @@ const Blog = (props) => {
                             <h5 className='text-gray-400 font-bold'>{days_ago}</h5>
                         </div>
                     </div>
-                    <h5 className=''>{read} min read <span onClick={setBookmark}><FontAwesomeIcon icon={faBookmark} size="lg" /></span></h5>
+                    <h5 className=''>{read} min read <span onClick={() => setBookmark(title)}><FontAwesomeIcon icon={faBookmark} size="lg" /></span></h5>
                 </div>
                 <h2 className="card-title text-4xl">{title}</h2>
                 <p className='text-gray-400'>{tag1} {tag2}</p>
