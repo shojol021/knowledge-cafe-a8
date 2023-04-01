@@ -15,11 +15,11 @@ const Questions = () => {
             </div>
             <div className='border border-purple-200 rounded-lg bg-purple-100 p-2'>
                 <h3 id='id3' className='text-lg font-bold text-purple-800'>What are the purposes of useEffect other than fetching data?</h3>
-                <h5><span className='font-bold text-gray-600'>Answer: </span>We can set dependency to re-render the a specific area based on some data changes(dependency). Some other common users are Subscribing and unsubscribing to events, Managing timers and intervals, Updating global state, Triggering side effects</h5>
+                <h5><span className='font-bold text-gray-600'>Answer: </span>We can set dependency to re-render a specific area based on some data changes(dependency). Some other common uses are Subscribing and unsubscribing to events, Managing timers and intervals, Updating global state, Triggering side effects</h5>
             </div>
             <div className='border border-purple-200 rounded-lg bg-purple-100 p-2'>
                 <h3 id='id4' className='text-lg font-bold text-purple-800'>How does react work?</h3>
-                <h5><span className='font-bold text-gray-600'>Answer: </span>We write HTML code to buld webpage, and then the browser convert it to DOM to paint(render) the output. On the other hand React manages everything in virtual DOM using Javascript XML and paint only once and in a specific area when everything is ready. This is more efficient in lots of cases, because it paint to the root element only once, not everytime</h5>
+                <h5><span className='font-bold text-gray-600'>Answer: </span>We write HTML code to build webpage, and then the browser convert it to DOM to paint(render) the output. On the other hand React manages everything in virtual DOM using Javascript XML and paint only once and in a specific area when everything is ready. This is more efficient in lots of cases, because it paint to the root element only once, not everytime</h5>
             </div>
         </div>
     );
