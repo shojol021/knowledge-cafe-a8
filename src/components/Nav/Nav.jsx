@@ -9,10 +9,10 @@ const Nav = () => {
 
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a className='p-2' href='#id1'>Q1</a></li>
-                    <li><a className='p-2' href='#id2'>Q2</a></li>
-                    <li><a className='p-2' href='#id3'>Q3</a></li>
-                    <li><a className='p-2' href='#id4'>Q4</a></li>
+                    <li><a className='p-2 lg:p-6' href='#id1'>Q1</a></li>
+                    <li><a className='p-2 lg:p-6' href='#id2'>Q2</a></li>
+                    <li><a className='p-2 lg:p-6' href='#id3'>Q3</a></li>
+                    <li><a className='p-2 lg:p-6' href='#id4'>Q4</a></li>
                 </ul>
             </div>
 

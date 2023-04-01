@@ -35,7 +35,7 @@ const Blog = (props) => {
             <div className="card-body">
                 <div className='flex justify-between items-center py-3'>
                     <div className='flex'>
-                        <img className="w-10 rounded-full" src={profile_pic} alt="" />
+                        <img className="w-16 h-16 rounded-full" src={profile_pic} alt="" />
                         <div className='px-5'>
                             <h4 className='font-bold text-base lg:text-2xl'>{name}</h4>
                             <h5 className='text-gray-400 font-bold'>{days_ago}</h5>
