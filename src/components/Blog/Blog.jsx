@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { toast } from 'react-toastify';
 
 const Blog = (props) => {
-    const { name, title, profile_pic, cover_pic, read, release, days_ago, tag1, tag2 } = props.blog;
+    const { name, title, profile_pic, cover_pic, read, days_ago, tag1, tag2 } = props.blog;
     const { setBookmark, addReadTime } = props;
+
+    const [count, setCount] = useState(0)
+    const handleToast = () => {
+        const newCount = count + 1;
+        setCount(newCount)
+        console.log(count)
+        if(count > 0){
+            toast('Already Bookmarked')
+            return;
+        }
+        
+    }
     return (
         <div className="card card-compact bg-base-100 shadow-xl mx-6">
             <figure><img src={cover_pic} alt="" /></figure>
@@ -17,7 +30,7 @@ const Blog = (props) => {
                             <h5 className='text-gray-400 font-bold'>{days_ago}</h5>
                         </div>
                     </div>
-                    <h5 className=''>{read} min read <span onClick={() => setBookmark(title)}><FontAwesomeIcon icon={faBookmark} size="lg" /></span></h5>
+                    <h5 className=''>{read} min read <span onClick={() => {setBookmark(title); handleToast()}}><FontAwesomeIcon icon={faBookmark} size="lg" /></span></h5>
                 </div>
                 <h2 className="card-title text-4xl">{title}</h2>
                 <p className='text-gray-400'>{tag1} {tag2}</p>

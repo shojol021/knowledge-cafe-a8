@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
 const Blogs = ({ setBookmark, addReadTime }) => {
-    // console.log(setBookmark)
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
